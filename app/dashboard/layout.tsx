@@ -1,8 +1,5 @@
 import SideNav from "../ui/dashboard/sidenav";
-
-
-
-
+import Page from "./(overview)/page";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
@@ -10,6 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="w-full flex-none md:w-64">
                 <SideNav />
             </div>
+            <Page/>
         </div>
     )
 }
