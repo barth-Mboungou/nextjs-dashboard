@@ -7,7 +7,7 @@ interface Breadcrumb {
   href: string;
   active?: boolean;
 }
-
+// brearceumbs en francais fil d'ariane ex: Accueil > Catégorie > Sous-catégorie > Page actuelle
 export default function Breadcrumbs({
   breadcrumbs,
 }: {

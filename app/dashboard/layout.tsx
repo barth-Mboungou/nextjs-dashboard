@@ -1,5 +1,6 @@
 import SideNav from "../ui/dashboard/sidenav";
 import Page from "./(overview)/page";
+import Pages from "./invoices/page";
 
 export const experimental_ppr = true;
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -8,7 +9,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="w-full flex-none md:w-64">
                 <SideNav />
             </div>
-            <Page/>
+            {/* <Page/> */}
+            <Pages />
         </div>
     )
 }
